@@ -3,11 +3,13 @@
 <html>
     <head>
         <style>
+            div{
+                width:100px;
+            }
             form{
                 margin:50px;
-                width:20px;
-                
             }
+            
             .box1{
                 width:20%;
                 float:right;
@@ -31,128 +33,108 @@
     </head>
     <body >
         <div class="box1" >
-            <h1>Your car</h1>
+            
+            
         
-            <div>
-                <div>
-                <span></span><b>Product name    <span></span></b>
-                <p>Brief description</p>
+            
+            
+           
+        <div  class="box2" >
+            <h1>Billing address</h1>
+                <div style="float:left ">
+                    <form >
+                         First name<br>
+                        <input name="First name" type="text" />
+                    </form>
                 </div>
-            </div>
-            <div>
-               <div><b>Second Product</b>
-                <p>Brief description</p>
-                </div>
-            </div>
-            <div>
-                <div><b>Third tiem &emsp; $5</b></div>
-                <p>Brief description</p>
-            </div>
-            <div>
-                <p>promo code &emsp; -$5<br>EXAMPLCODE</p>
-                
-            </div>
-            <div>
-            <p>total &emsp; $20</p>
-            </div>
-        </div>
-    <!--room 2--> 
-    <div  class="box2" >
-        <h1>Billing address</h1>
-        <div style="float:left ">
-            <form >
-                First name<br>
-                <input name="First name" type="text"/>
-            </form>
-        </div>
         
-        <div style="float:left">
-            <form >
-                last name<br>
-                <input type="text" name="last name"/>
-            </form>
-        </div>
+            <div style="float:left">
+                <form >
+                    last name<br>
+                    <input type="text" name="last name"/>
+                </form>
+            </div>
 
-        <div  class="fixfloat"></div>
+            <div  class="fixfloat"></div>
 
-        <div>
-            <form>
-                email<br>
-                <input type="text" name ="email" placeholder="you@email.com"/>
-                <br>
-                address<br>
-                <input type="text" name ="address" placeholder="123 Main St"/>
-                <br>
-                address 2<br>
-                <input type="text" name="address 2" placeholder="Aparment or suite"/>
-            </form>
-        </div>
-      
-        <div style="float:left">
+            <div>
                 <form>
-                    country<br>
+                    email<br>
+                    <input type="text" name ="email" placeholder="you@email.com"/>
+                    <br>
+                    address<br>
+                    <input type="text" name ="address" placeholder="123 Main St"/>
+                    <br>
+                    address 2<br>
+                    <input type="text" name="address 2" placeholder="Aparment or suite"/>
+                </form>
+            </div>
+      
+            <div style="float:left">
+                    <form>
+                        country<br>
+                        <select>
+                            <option value="Choose...">Choose...</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </form>
+            </div>
+            <div style="float:left"> 
+                <form>
+                    state<br>
                     <select>
                         <option value="Choose...">Choose...</option>
-                        <option value="USA">USA</option>
+                        <option value="California">California</option>
                     </select>
-                </form>
-        </div>
-        <div style="float:left"> 
-            <form>
-                state<br>
-                <select>
-                    <option value="Choose...">Choose...</option>
-                    <option value="California">California</option>
-                </select>
-            </form>    
-        </div>    
-        <div style="float:left">
+                </form>    
+            </div>    
+            <div style="float:left">
                 <form>    
                     zip<br>
                     <input type="text"/>
                 </form>
-        </div>
-        <div class="fixfloat"></div>
-        <hr>
-        <div>
-            <form>
-                <input type="checkbox"/>shipping address is the same as my billing address
-                <br>
-                <input type="checkbox"/>save this information for next time
-            </form>
-        </div>
-        <hr>
-        <div style="float:left">
-           <h1>payment</h1>
-            <form>
-                <input type="radio" name="payment"/>credit card
-                <br>
-                <input type="radio" name="payment"/>debit card
-                <br>
-                <input type="radio" name="payment"/>paypal
-                <br>
-            </form>
-        </div>
-        <div style="clear:both"></div>
-        <div>
-            <div style="float:left">
-            <form>
-                Name on card
-                <br>
-                <input type="text"/>
-                <br>
-                Full name as displayed on card
-                <br>
-                Expiration
-                <br>
-                <input type="text"/>
-                <br>
-                CVV
-                <br>
-                <input type="text"/>
+            </div>
+            <div class="fixfloat"></div>
+            <hr>
+            <div>
+                <form>
+                    <input type="checkbox"/>shipping address is the same as my billing address
+                    <br>
+                    <input type="checkbox"/>save this information for next time
                 </form>
             </div>
-        </div>    
+            <hr>
+            <div style="float:left">
+                <h1>payment</h1>
+                <form>
+                    <input type="radio" name="payment"/>credit card
+                    <br>
+                    <input type="radio" name="payment"/>debit card
+                    <br>
+                    <input type="radio" name="payment"/>paypal
+                    <br>
+                 </form>
+            </div>
+            <div style="clear:both"></div>
+            <div>
+                <div style="float:left">
+                <form>
+                    Name on card
+                    <br>
+                    <input type="text"/>
+                    <br>
+                    Full name as displayed on card
+                    <br>
+                    Expiration
+                    <br>
+                    <input type="text"/>
+                    <br>
+                    CVV
+                    <br>
+                    <input type="text"/>
+                </form>
+            </div>
+            
             
             <div style="float:left">
                 <form>
@@ -161,7 +143,7 @@
                     <input type="text"/>
                 </form>
             </div>
-        
+        </div>
     </div>
     </body>
 </html>
