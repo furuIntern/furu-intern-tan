@@ -11,14 +11,14 @@
             }
             
             .box1{
-                width:20%;
+                width:350px;
                 float:right;
-                
+                background-color: green;
             }
             .box2{
-                width:80%;
+                width:870px;
                 float:right;
-                
+                background-color: black;
                 
             }
             .fixfloat{
@@ -32,23 +32,41 @@
             by attempting to submit the form without completing it.</p>
     </head>
     <body >
+        <!--sheet 1-->
         <div class="box1" >
-            
-            
-        
-            
-            
-           
-        <div  class="box2" >
-            <h1>Billing address</h1>
-                <div style="float:left ">
-                    <form >
-                         First name<br>
-                        <input name="First name" type="text" />
-                    </form>
+            <h2>your card</h1>
+                <div class="collapse">
+                    <h3>Product name</h3>
+                    <small>Brief description</small>
                 </div>
+                <div class="collapse">
+                    <h3>Second product</h3>
+                    <smaall>Brief description</smaall>
+                </div>
+                <div class="collapse">
+                    <h3>Promo code</h3>
+                    <h3>EXMPLECODE</h3>
+                </div>
+                <div class="collapse">
+                    Total(USD)
+                </div>
+                <div>
+                    <form>
+                        <input type="text" placeholder="Promo code"/><span>Redeem</span>
+                    </form>
+                </div>       
+        </div>    
+         <!--sheet 2--> 
+        <div  class="box2" >
+                <h1>Billing address</h1>
+                <div style="float:left ">
+                <form >
+                    First name<br>
+                    <input name="First name" type="text" />
+                </form>
+            </div>
         
-            <div style="float:left">
+            <div style="float:left" >
                 <form >
                     last name<br>
                     <input type="text" name="last name"/>
