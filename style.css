@@ -8,12 +8,12 @@
                 height:30px;
             }
             .sizebox2in1{
-                width:385px;
+                width: 100%;
                 height:30px;
                 
             }
             .sizebox{
-                width: 800px;
+                width: 100%;
                 height: 30px;
             }
             div{
@@ -35,11 +35,15 @@
                 width:800px;
                 background-color: aquamarine;
                 border: 1px solid aquamarine;
+                height:40px;
+                font-size: 100%;
+                text-align: center;
             }
             
-            .fixfloat{
+            .fixfloat::after{
                 clear:both;
-                
+                content:"";
+                display:block;
             }
             .horizon{
                 color:gray;
@@ -49,10 +53,23 @@
                 width:180px;
                 height:30px;
             }
-            .distance{
-                padding: 100px;
+            .reddem{
+                border: 1px solid black;
             }
-            
+            ul{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            li{
+                display:initial;
+            }
+            .number{
+               float: right;
+            }
+            .max{
+                width:100%;
+            }
                
-            }
+            
        

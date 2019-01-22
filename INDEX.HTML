@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-                                                    
-        <link rel="stylesheet" href="D:\HTML\style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
         <h1 style="text-align:center"><b>Checkout form</b></h1>
         <p style="font-size:30px;text-align:center">Below is an example form built entirely with Bootstrap’s form controls. 
             Each required form group has a validation state that can be triggered 
@@ -13,45 +13,69 @@
         <!--sheet 1-->
         <div class="box1" >
             <div><h2>your card</h1></div>
+            <ul style="list-style-type: none">
+                <li style="display:block">
+                    <div class="collapse">
+                        <span>Product name</span>
+                        <span class="number">$12</span>
+                        <br>
+                        <small>Brief description</small>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapse">
+                        <span>Second product</span>
+                        <span class="number">$8</span>
+                        <br>
+                        <small>Brief description</small>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span>Third item</span>
+                        <span class="number">$5</span>
+                        <br>
+                        <small>Brief description</small>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapse">
+                        <span>Promo code</span>
+                        <span class="number">-$5</span>
+                        <p>EXMPLECODE</p>
+                    </div>
+                </li>
+                <li>
                 <div class="collapse">
-                    <h3>Product name</h3>
-                    <small>Brief description</small>
+                    <span>Total(USD)</span>
+                    <span class="number">$20</span>
                 </div>
-                <span>$12</span>
-                <div class="collapse">
-                    <h3>Second product</h3>
-                    <smaall>Brief description</smaall>
-                </div>
-                <div class="collapse">
-                    <h3>Promo code</h3>
-                    <h3>EXMPLECODE</h3>
-                </div>
-                <div class="collapse">
-                    Total(USD)
-                </div>
+                </li>
+            </ul>
                 <div style="float:left">
                     <form>
-                        <input style="margin:0%" type="text" placeholder="Promo code"/>
+                        <input style="width:350px" type="text" placeholder="Promo code"/>
                     </form>
                 </div>
+                
                 <div class="redeem">Redeem</div>       
         </div>    
          <!--sheet 2--> 
         <div  class="box2" >
-            <div class="height"><div class="height"><h1>Billing address</h1></div></div>
+            <h1>Billing address</h1>
             <form >
-                <div class="height">
-                    <div class="height" style="float:left ">
+                <div>
+                    <div style="float:left ">
                         First name<br>
                         <input class="sizebox2in1" name="First name" type="text" />
                     </div>
-                    <div class="height" style="float:left" >
+                    <div style="float:left" >
                         last name<br>
                         <input class="sizebox2in1" type="text" name="last name"/>
                     </div>
                 </div>
                 <div class="fixfloat" ></div>
-                <div class="height">
+                <div class="max" >
                     <div>
                         email<br>
                         <input class="sizebox" type="text" name ="email" placeholder="you@email.com"/>
@@ -63,7 +87,7 @@
                         <input class="sizebox" type="text" name="address 2" placeholder="Aparment or suite"/>
                     </div>
                 </div>
-                <div class="height">
+                <div class="max">
                     <div style="float:left">
                         country<br>
                         <select class="sizebox3in1">
@@ -85,7 +109,7 @@
                 </div>
                 <div class="fixfloat"></div>
                 <div><hr class="horizon"></div>
-                <div>
+                <div class="max">
                     <div>
                         <input type="checkbox"/>shipping address is the same as my billing address
                         <br>
@@ -93,7 +117,7 @@
                     </div>
                 </div>
                 <div><hr class="horizon"></div>
-                <div>
+                <div class="max">
                     <div>
                         <h1>payment</h1>
                         <input type="radio" name="payment"/>credit card
@@ -104,7 +128,7 @@
                         <br>
                     </div>    
                 </div>
-                <div class="height">
+                <div >
                     <div style="float:left">
                         Name on card
                         <br>
@@ -119,7 +143,7 @@
                     </div>
                 </div>    
                     <div class="fixfloat"></div>
-                <div class="height">
+                <div >
                     <div style="float:left">
                         Expiration
                         <br>
@@ -133,7 +157,7 @@
                 </div>    
             <div><hr class="horizon"></div>
             <div>
-                <input class="stylebutton"type="submit" value="Continue to checkout"/>
+                <input class="stylebutton" type="submit" value="Continue to checkout"/>
             </div>
         </form>
     </div>
