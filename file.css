@@ -1,0 +1,9 @@
+body{
+    background-color: beige
+}
+.box{
+    text-align: justify;
+    margin-bottom: 100px;
+    width: 100%;
+    box-sizing: border-box
+}
