@@ -1,0 +1,58 @@
+
+            *  {
+                box-sizing:border-box;
+                
+            }
+            .sizebox3in1{
+                width:240px;
+                height:30px;
+            }
+            .sizebox2in1{
+                width:385px;
+                height:30px;
+                
+            }
+            .sizebox{
+                width: 800px;
+                height: 30px;
+            }
+            div{
+               padding: 15px;
+               size: 20px;
+            }
+            .box1{
+                width:30%;
+                float:right;
+                background-color: green;
+            }
+            .box2{
+                width:70%;
+                float:right;
+                background-color: yellow;
+                
+            }
+            .stylebutton{
+                width:800px;
+                background-color: aquamarine;
+                border: 1px solid aquamarine;
+            }
+            
+            .fixfloat{
+                clear:both;
+                
+            }
+            .horizon{
+                color:gray;
+            }
+            .styleExCVV
+            {
+                width:180px;
+                height:30px;
+            }
+            .distance{
+                padding: 100px;
+            }
+            
+               
+            }
+       

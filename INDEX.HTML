@@ -2,45 +2,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            *{
-                box-sizing:border-box;
-                
-            }
-            .sizebox3in1{
-                width:246px;
-            }
-            .sizebox2in1{
-                width:385px;
-                height:20px;
-                
-            }
-            .sizebox{
-                width: 800px;
-                height: 20px;
-            }
-            div{
-               padding: 15px;
-               size: 20px;
-            }
-            .box1{
-                width:30%;
-                float:right;
-                background-color: green;
-            }
-            .box2{
-                width:70%;
-                float:right;
-                background-color: yellow;
-                
-            }
-            
-            }
-            .fixfloat{
-                clear:both;
-            }
-        </style>                                        
-        <link rel="styles" href="file.css">
+                                                
+        <link rel="stylesheet" href="D:\HTML\style.css">
         <h1 style="text-align:center"><b>Checkout form</b></h1>
         <p style="font-size:30px;text-align:center">Below is an example form built entirely with Bootstrap’s form controls. 
             Each required form group has a validation state that can be triggered 
@@ -49,7 +12,7 @@
     <body >
         <!--sheet 1-->
         <div class="box1" >
-            <h2>your card</h1>
+            <div><h2>your card</h1></div>
                 <div class="collapse">
                     <h3>Product name</h3>
                     <small>Brief description</small>
@@ -75,115 +38,104 @@
         </div>    
          <!--sheet 2--> 
         <div  class="box2" >
-                <h1>Billing address</h1>
-                <div style="float:left ">
-                <form >
-                    First name<br>
-                    <input class="sizebox2in1" name="First name" type="text" />
-                </form>
-            </div>
-        
-            <div style="float:left" >
-                <form >
-                    last name<br>
-                    <input class="sizebox2in1" type="text" name="last name"/>
-                </form>
-            </div>
-
-            <div  class="fixfloat"></div>
-
-            <div>
-                <form>
-                    email<br>
-                    <input class="sizebox" type="text" name ="email" placeholder="you@email.com"/>
-                    <br>
-                    address<br>
-                    <input class="sizebox" type="text" name ="address" placeholder="123 Main St"/>
-                    <br>
-                    address 2<br>
-                    <input class="sizebox" type="text" name="address 2" placeholder="Aparment or suite"/>
-                </form>
-            </div>
-      
-            <div style="float:left">
-                    <form>
+            <div class="height"><div class="height"><h1>Billing address</h1></div></div>
+            <form >
+                <div class="height">
+                    <div class="height" style="float:left ">
+                        First name<br>
+                        <input class="sizebox2in1" name="First name" type="text" />
+                    </div>
+                    <div class="height" style="float:left" >
+                        last name<br>
+                        <input class="sizebox2in1" type="text" name="last name"/>
+                    </div>
+                </div>
+                <div class="fixfloat" ></div>
+                <div class="height">
+                    <div>
+                        email<br>
+                        <input class="sizebox" type="text" name ="email" placeholder="you@email.com"/>
+                        <br>
+                        address<br>
+                        <input class="sizebox" type="text" name ="address" placeholder="123 Main St"/>
+                        <br>
+                        address 2<br>
+                        <input class="sizebox" type="text" name="address 2" placeholder="Aparment or suite"/>
+                    </div>
+                </div>
+                <div class="height">
+                    <div style="float:left">
                         country<br>
                         <select class="sizebox3in1">
                             <option value="Choose...">Choose...</option>
                             <option value="USA">USA</option>
                         </select>
-                    </form>
-            </div>
-            <div style="float:left"> 
-                <form>
-                    state<br>
-                    <select class="sizebox3in1"> 
-                        <option value="Choose...">Choose...</option>
-                        <option value="California">California</option>
-                    </select>
-                </form>    
-            </div>    
-            <div style="float:left">
-                <form>    
-                    zip<br>
-                    <input class="sizebox3in1" type="text"/>
-                </form>
-            </div>
-            <div class="fixfloat"></div>
-            <hr>
+                    </div>    
+                    <div style="float:left"> 
+                        state<br>
+                        <select class="sizebox3in1"> 
+                            <option value="Choose...">Choose...</option>
+                            <opt ion value="California">California</option>
+                        </select>
+                    </div>    
+                    <div style="float:left">
+                        zip<br>
+                        <input class="sizebox3in1" type="text"/>
+                    </div>    
+                </div>
+                <div class="fixfloat"></div>
+                <div><hr class="horizon"></div>
+                <div>
+                    <div>
+                        <input type="checkbox"/>shipping address is the same as my billing address
+                        <br>
+                        <input type="checkbox"/>save this information for next time
+                    </div>
+                </div>
+                <div><hr class="horizon"></div>
+                <div>
+                    <div>
+                        <h1>payment</h1>
+                        <input type="radio" name="payment"/>credit card
+                        <br>
+                        <input type="radio" name="payment"/>debit card
+                        <br>
+                        <input type="radio" name="payment"/>paypal
+                        <br>
+                    </div>    
+                </div>
+                <div class="height">
+                    <div style="float:left">
+                        Name on card
+                        <br>
+                        <input class="sizebox2in1" type="text"/>
+                        <br>
+                        Full name as displayed on card
+                    </div>
+                    <div style="float:left">
+                        Credit card number
+                        <br>
+                        <input class="sizebox2in1" type="text"/>
+                    </div>
+                </div>    
+                    <div class="fixfloat"></div>
+                <div class="height">
+                    <div style="float:left">
+                        Expiration
+                        <br>
+                        <input class="styleExCVV" type="text"/>
+                    </div>
+                    <div class="float:left">
+                        CVV
+                        <br>
+                        <input class="styleExCVV" type="text"/>
+                    </div>
+                </div>    
+            <div><hr class="horizon"></div>
             <div>
-                <form>
-                    <input type="checkbox"/>shipping address is the same as my billing address
-                    <br>
-                    <input type="checkbox"/>save this information for next time
-                </form>
+                <input class="stylebutton"type="submit" value="Continue to checkout"/>
             </div>
-            <hr>
-            <div>
-                <h1>payment</h1>
-                <form>
-                    <input type="radio" name="payment"/>credit card
-                    <br>
-                    <input type="radio" name="payment"/>debit card
-                    <br>
-                    <input type="radio" name="payment"/>paypal
-                    <br>
-                 </form>
-            </div>
-            <hr>
-            <div>
-                <div style="float:left">
-                <form>
-                    Name on card
-                    <br>
-                    <input type="text"/>
-                    <br>
-                    Full name as displayed on card
-                    <br>
-                    Expiration
-                    <br>
-                    <input type="text"/>
-                    <br>
-                    CVV
-                    <br>
-                    <input type="text"/>
-                </form>
-            </div>
-            <div style="float:left">
-                <form>
-                    Credit card number
-                    <br>
-                    <input type="text"/>
-                </form>
-            </div>
-            <div class="fixfloat"></div>
-            <hr>
-            <div>
-                <form>
-                    <input class="stylebutton"type="submit" value="Continue to checkout"/>
-                </form>
-            </div>
-        </div>
+        </form>
     </div>
     </body>
 </html>
