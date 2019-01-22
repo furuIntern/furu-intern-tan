@@ -1,0 +1,135 @@
+<!--Minh Tan  (21/1/2019)-->
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="styles" href="file.css">
+        <h1 style="text-align:center"><b>Checkout form</b></h1>
+        <p style="font-size:30px;text-align:center">Below is an example form built entirely with Bootstrap’s form controls. 
+            Each required form group has a validation state that can be triggered 
+            by attempting to submit the form without completing it.</p>
+    </head>
+    <body >
+    
+        <h1>Your car</h1>
+        <div style="background-color:honeydew ;float:right ; width:20% " >
+            <div>
+                <div><b>Product name $12</b>
+                <p>Brief description</p>
+                </div>
+            </div>
+            <div>
+               <div><b>Second Product</b>
+                <p>Brief description</p>
+                </div>
+            </div>
+            <div>
+                <div><b>Third tiem &emsp; $5</b></div>
+                <p>Brief description</p>
+            </div>
+            <div>
+                <p>promo code &emsp; -$5<br>EXAMPLCODE</p>
+                
+            </div>
+            <div>
+            <p>total &emsp; $20</p>
+            </div>
+        </div>
+     
+    <div class="box" style="float:right ; width: 80%">
+        <div>
+            <h1>Billing address</h1>
+        <div class="box"style="float:left ">
+            <form class="style">
+                First name<br>
+                <input name="First name" type="text"/>
+            </form>
+        </div>
+        <div class="box"style="float:left">
+            <form class="style">
+                last name<br>
+                <input type="text" name="last name"/>
+            </form>
+         </div>
+        <div style="clear:both"></div>
+        <div class="box" >
+            <form>
+                email<br>
+                <input type="text" name ="email" placeholder="you@email.com"/>
+                <br>
+                address<br>
+                <input type="text" name ="address" placeholder="123 Main St"/>
+                <br>
+                address 2<br>
+                <input type="text" name="address 2" placeholder="Aparment or suite"/>
+            </form>
+        </div>
+        <div>
+            <div class="box">
+                <form class="style">
+                    country<br>
+                    <input type="choosecountry" name="country"/>
+                </form>
+            </div>
+            <div class="box">
+                state<br>
+                <select>
+                    <option value="Choose...">Choose...</option>
+                    <option value="USA">USA</option>
+                </select>
+            </div>    
+            <div class="box">
+                </form class="style">    
+                    zip<br>
+                    <input type="text"/>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="box">
+            <form>
+                <input type="checkbox"/>shipping address is the same as my billing address
+                <br>
+                <input type="checkbox"/>save this information for next time
+            </form>
+            <hr>
+            <h1>payment</h1>
+            <form>
+                <input type="radio"/>credit card
+                <br>
+                <input type="radio"/>debit card
+                <br>
+                <input type="radio">paypal
+                <br>
+            </form>
+        </div>
+        
+            <div class="box" style="float:left">
+                <form>
+                    Name on card
+                    <br>
+                    <input type="text"/>
+                    <br>
+                    Full name as displayed on card
+                    <br>
+                    Expiration
+                    <br>
+                    <input type="text"/>
+                    <br>
+                    CVV
+                    <br>
+                    <input type="text"/>
+                </form>
+            </div>
+            <div style="clear:both"></div>
+            <div class="box" style="float:left">
+                <form>
+                    Credit card number
+                    <br>
+                    <input type="text"/>
+                </form>
+            </div>
+        
+    </div>
+    </body>
+</html>
