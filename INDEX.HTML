@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="style.css">
         <h1 style="text-align:center"><b>Checkout form</b></h1>
-        <p style="font-size:30px;text-align:center">Below is an example form built entirely with Bootstrap’s form controls. 
+        <p class="option"style="font-size:30px;text-align:center">Below is an example form built entirely with Bootstrap’s form controls. 
             Each required form group has a validation state that can be triggered 
             by attempting to submit the form without completing it.</p>
     </head>
@@ -14,13 +14,13 @@
         <div class="box1" >
             <div>
                 <span style="font-size: 10% ; color:gray">Your car</span>
-                <span class="number">3</span>
+                <span class="boxright">3</span>
             </div>
             <ul style="list-style-type: none">
                 <li style="display:block">
                     <div class="collapse">
                         <span>Product name</span>
-                        <span class="number">$12</span>
+                        <span class="boxright">$12</span>
                         <br>
                         <small>Brief description</small>
                     </div>
@@ -28,7 +28,7 @@
                 <li>
                     <div class="collapse">
                         <span>Second product</span>
-                        <span class="number">$8</span>
+                        <span class="boxright">$8</span>
                         <br>
                         <small>Brief description</small>
                     </div>
@@ -36,26 +36,26 @@
                 <li>
                     <div class="collapse">
                         <span>Third item</span>
-                        <span class="number">$5</span>
+                        <span class="boxright">$5</span>
                         <br>
                         <small>Brief description</small>
                     </div>
                 </li>
                 <li>
                     <div class="collapse">
-                        <span>Promo code</span>
-                        <span class="number">-$5</span>
+                        <span class="font">Promo code</span>
+                        <span class="boxright">-$5</span>
                         <p>EXMPLECODE</p>
                     </div>
                 </li>
                 <li>
                 <div class="collapse">
                     <span>Total(USD)</span>
-                    <span class="number">$20</span>
+                    <span class="boxright">$20</span>
                 </div>
                 </li>
             </ul>
-                <div style="float:left">
+                <div class="boxleft">
                     <form>
                         <input style="width:350px" type="text" placeholder="Promo code"/>
                     </form>
@@ -65,65 +65,66 @@
         </div>    
          <!--sheet 2--> 
         <div  class="box2" >
-            <h1>Billing address</h1>
+            <h1 class="option">Billing address</h1>
             <form >
-                <div>
-                    <div style="float:left ">
+                <div class="contain">
+                    <div class="boxleft">
                         First name<br>
                         <input class="sizebox2in1" name="First name" type="text" />
                     </div>
-                    <div style="float:left" >
+                    <div class="boxright">
                         last name<br>
                         <input class="sizebox2in1" type="text" name="last name"/>
                     </div>
+                    <div class="clear"></div>
                 </div>
-                <div class="fixfloat" ></div>
-                <div class="max" >
-                    <div >
-                        email<br>
-                        <input class="sizebox" type="text" name ="email" placeholder="you@email.com"/>
-                        <br>
-                        address<br>
-                        <input class="sizebox" type="text" name ="address" placeholder="123 Main St"/>
-                        <br>
-                        address 2<br>
-                        <input class="sizebox" type="text" name="address 2" placeholder="Aparment or suite"/>
-                    </div>
+                <div >
+                    email<br>
+                    <input class="sizebox" type="text" name ="email" placeholder="you@email.com"/>
+                    <br>
+                    address<br>
+                    <input class="sizebox" type="text" name ="address" placeholder="123 Main St"/>
+                    <br>
+                    address 2<br>
+                    <input class="sizebox" type="text" name="address 2" placeholder="Aparment or suite"/>
                 </div>
-                
-                <div class="max">
-                    <div style="float:left">
+                <div class="contain">
+                    <div class="boxleft">
                         country<br>
                         <select class="sizebox3in1">
                             <option value="Choose...">Choose...</option>
                             <option value="USA">USA</option>
                         </select>
                     </div>    
-                    <div style="float:left"> 
+                    <div class="boxleft"> 
                         state<br>
                         <select class="sizebox3in1"> 
                             <option value="Choose...">Choose...</option>
-                            <opt ion value="California">California</option>
+                            <option value="California">California</option>
                         </select>
                     </div>    
-                    <div style="float:left">
+                    <div class="boxleft">
                         zip<br>
                         <input class="sizebox3in1" type="text"/>
-                    </div>    
+                    </div>
+                    <div class="clear"></div>    
                 </div>
-                <div class="fixfloat"></div>
-                <div><hr class="horizon"></div>
-                <div class="max">
+                <div class="contain">
+                    <hr>
+                </div>
+                <div>
                     <div>
                         <input type="checkbox"/>shipping address is the same as my billing address
                         <br>
                         <input type="checkbox"/>save this information for next time
                     </div>
                 </div>
-                <div><hr class="horizon"></div>
-                <div class="max">
+                <div>
+                    <hr class="contain">
+                </div>
+                <div class="min">
                     <div>
-                        <h1>payment</h1>
+                        <h1 class="option">payment</h1>
                         <input type="radio" name="payment"/>credit card
                         <br>
                         <input type="radio" name="payment"/>debit card
@@ -132,34 +133,36 @@
                         <br>
                     </div>    
                 </div>
-                <div >
-                    <div style="float:left">
+                <div>
+                    <div class="boxleft">
                         Name on card
                         <br>
                         <input class="sizebox2in1" type="text"/>
                         <br>
                         Full name as displayed on card
                     </div>
-                    <div style="float:left">
-                        Credit card number
+                    <div class="boxright">
+                        Credit card boxright
                         <br>
                         <input class="sizebox2in1" type="text"/>
                     </div>
                 </div>    
-                    <div class="fixfloat"></div>
-                <div >
-                    <div style="float:left">
+                <div class="contain">
+                    <div class="boxleft">
                         Expiration
                         <br>
                         <input class="styleExCVV" type="text"/>
                     </div>
-                    <div class="float:left">
+                    <div class="boxleft">
                         CVV
                         <br>
                         <input class="styleExCVV" type="text"/>
                     </div>
+                    <div class="clear"></div>
                 </div>    
-            <div><hr class="horizon"></div>
+            <div>
+                <hr class="contain">
+            </div>
             <div>
                 <input class="stylebutton" type="submit" value="Continue to checkout"/>
             </div>
