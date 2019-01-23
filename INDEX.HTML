@@ -21,18 +21,21 @@
                     <form >
                         <div class="flexble">
                             <div class="padding" style="width:50%">
-                                First name<br>
-                                <input class="sizebox border" name="First name" type="text" />
+                                <label for="firstname">First name</label>
+                                <input id="firstname" class="sizebox border" name="First name" type="text" placeholder value required />
                             </div>
                             <div class="padding" style="width:50%">
-                                last name<br>
-                                <input class="sizebox border" type="text" name="last name"/>
+                                <label for="lastname">last name</label>
+                                <input id="lastname" class="sizebox border" type="text" name="last name" placeholder value required/>
+                                <div class="error">invail</div>
                             </div>
                         </div>
                         <div>
                             <div>
+                                <label for="user">Username</label>
+                                <input id="user"class="sizebox border" type="text" name="user" placeholder="User" value required/>
                                 email<br>
-                                <input class="sizebox border" type="text" name ="email" placeholder="you@email.com"/>
+                                <input id="email" class="sizebox border" type="text" name ="email" placeholder="you@email.com"value required/>
                                 <br>
                                 address<br>
                                 <input class="sizebox border" type="text" name ="address" placeholder="123 Main St"/>
@@ -182,6 +185,11 @@
                     <a href="#"><li class="inline">Support</li></a>
                 </ul>
         </footer>
+        <script>
+            function invail(){
+                
+            } 
+        </script>
     </body>
       
 </html>
