@@ -1,34 +1,26 @@
 
-            *  {
+            *{
                 box-sizing:border-box;
+                font-size:medium !important;
+                line-height:1.25;
+            }
+            
+                
+            * body {
+                
                 background: ghostwhite;
             }
-            .sizebox3in1{
-                width:240px;
-                height:30px;
-            }
-            .sizebox2in1{
-                width: 100%;
-                padding: 5px 5px 0px 73px;
-            }
+            
             .sizebox{
                 width: 100%;
-                height: 30px;
+                padding: 5px 100px 5px 81px;
+                margin: 0px 0px 10px 0px;
             }
+            
+            
             div{
                padding: 10px;
                background: ghostwhite;
-            }
-            .box1{
-                width:30%;
-                float:right;
-                background: ghostwhite;;
-            }
-            .box2{
-                width:70%;
-                float:right;
-                background: ghostwhite;;
-                
             }
             .stylebutton{
                 width:100%;
@@ -53,35 +45,57 @@
             .horizon{
                 color:gray;
             }
-            .styleExCVV
-            {
-                width:180px;
-                height:30px;
-            }
             .reddem{
-                border: 1px solid black;
+                border: 1px solid #000;
+                background-color:rgb(77, 75, 75);
+                color:#ffff;
             }
             ul{
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
             }
-            li{
-                display:initial;
-            }
+            
             .boxright{
                float: right;
+               
             }
             .collapse{
-                border: 1px solid gray;
+                border-bottom: 1px solid gray;
                 background-color: azure;
-                border-collapse: collapse;  
+                border-radius:4px;  
             }
             .boxleft{
                 float:left;
+
             }
             .option{
-                margin: 1.5;
-            }   
+                margin-bottom: 0.5;
+                margin-top:0;
+            }
+            .padding{
+                padding: 0;
+            }
+            input.width{
+                max-width:431px;
+            }
+            input.border{
+                border-style: round;
+                border: 1px solid black;
+                border-radius:12px;
+                margin-right:inherit;
+            }
+            select.border{
+                border-style: round;
+                border: 1px solid black;
+                border-radius:12px;
+
+            }
+            .table, .promo, .containpromo{
+                border: 1px solid gray;
+                background-color: azure;
+                border-radius:4px; 
+                
+            }  
             
        
