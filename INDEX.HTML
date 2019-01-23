@@ -6,85 +6,30 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body  >
-        <!--sheet 1-->
         <div>
+            <!--sheet 1-->
             <div class="contain">
                 <h1 style="text-align:center"><b>Checkout form</b></h1>
                 <p class="option"style="font-size:30px;text-align:center">Below is an example form built entirely with Bootstrap’s form controls. 
                 Each required form group has a validation state that can be triggered 
                 by attempting to submit the form without completing it.</p>
             </div>     
-                <div >
-                    <div>
-                        <span class="">Your car</span>
-                        <span class="boxright">3</span>
-                    </div>
-                    <ul class="table" style="list-style-type: none">
-                        <li style="display:block">
-                            <div class="collapse">
-                                <span>Product name</span>
-                                <span class="boxright">$12</span>
-                                <br>
-                                <small>Brief description</small>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapse">
-                                <span>Second product</span>
-                                <span class="boxright">$8</span>
-                                <br>
-                                <small>Brief description</small>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapse">
-                                <span>Third item</span>
-                                <span class="boxright">$5</span>
-                                <br>
-                                <small>Brief description</small>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapse">
-                                <span class="font">Promo code</span>
-                                <span class="boxright">-$5</span>
-                                <p>EXMPLECODE</p>
-                            </div>
-                        </li>
-                        <li>
-                        <div class="collapse">
-                            <span>Total(USD)</span>
-                            <span class="boxright">$20</span>
-                        </div>
-                        </li>
-                    </ul>
-                        <form class="promo" style="margin-top:20px ; padding: 10px">
-                            <input class="promo"style="width:90% ; margin-top:20" type="text" placeholder="Promo code"/>
-                            <div class="boxright" style="width:10% ; margin:0 ; padding:0">
-                                <button class="redeem" style="margin-top:20" type="submit">Redeem </button>
-                            </div>
-                        </form>
-                          
-                        
-                        
-                             
-                </div>    
-                 <!--sheet 2--> 
+            <div class="flexble">
+                <!--sheet 2--> 
                 <div class="contain">
                     <h1 class="option">Billing address</h1>
                     <form >
-                        <div class="contain">
-                            <div >
+                        <div class="flexble">
+                            <div class="padding">
                                 First name<br>
                                 <input class="sizebox border" name="First name" type="text" />
                             </div>
-                            <div>
+                            <div class="padding">
                                 last name<br>
                                 <input class="sizebox border" type="text" name="last name"/>
                             </div>
-                            
                         </div>
-                        <div >
+                        <div style="padding:20px">
                             email<br>
                             <input class="sizebox border" type="text" name ="email" placeholder="you@email.com"/>
                             <br>
@@ -94,26 +39,25 @@
                             address 2<br>
                             <input class="sizebox border" type="text" name="address 2" placeholder="Aparment or suite"/>
                         </div>
-                        <div class="contain">
-                            <div class="boxleft">
+                        <div class="flexble">
+                            <div>
                                 country<br>
                                 <select class="sizebox border">
                                     <option value="Choose...">Choose...</option>
                                     <option value="USA">USA</option>
                                 </select>
                             </div>    
-                            <div class="boxleft"> 
+                            <div> 
                                 state<br>
                                 <select class="sizebox border"> 
                                     <option value="Choose...">Choose...</option>
                                     <option value="California">California</option>
                                 </select>
                             </div>    
-                            <div class="boxleft">
+                            <div>
                                 zip<br>
                                 <input class="sizebox border" type="text"/>
-                            </div>
-                            <div class="clear"></div>    
+                            </div>    
                         </div>
                         <div class="contain">
                             <hr>
@@ -139,42 +83,91 @@
                                 <br>
                             </div>    
                         </div>
-                        <div>
-                            <div class="boxleft">
+                        <div class="flexble" style="width:100%">
+                            <div>
                                 Name on card
                                 <br>
                                 <input class="sizebox border" type="text"/>
                                 <br>
                                 Full name as displayed on card
                             </div>
-                            <div class="boxleft">
+                            <div>
                                 Credit card boxright
                                 <br>
                                 <input class="sizebox border" type="text"/>
                             </div>
-                            <div class="clear"></div>
                         </div>    
-                        <div>
-                            <div class="boxleft">
+                        <div class="flexble" style="width:40%">
+                            <div>
                                 Expiration
                                 <br>
                                 <input class="sizebox border" type="text"/>
                             </div>
-                            <div class="boxleft">
+                            <div>
                                 CVV
                                 <br>
                                 <input class="sizebox border" type="text"/>
-                            </div>
-                        <div class="clear"></div>  
-                        </div>    
-                    <div>
-                        <hr class="contain">
-                    </div>
-                    <div>
-                        <input class="stylebutton border" type="submit" value="Continue to checkout"/>
-                    </div>
+                                </div>
+                            </div>    
+                        <div>
+                            <hr class="contain">
+                        </div>
+                        <div>
+                            <input class="stylebutton border" type="submit" value="Continue to checkout"/>
+                        </div>
                     </form>
-            </div>
+                </div>
+                <div style="width:50%">
+                    <div>
+                        <span class="">Your car</span>
+                        <span class="boxright decoration" >3</span>
+                    </div>
+                    <ul class="table" style="list-style-type: none">
+                        <li style="display:block">
+                            <div class="collapse">
+                                <span class="font-size">Product name</span>
+                                <span class="boxright">$12</span>
+                                <br>
+                                <small class="color">Brief description</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapse">
+                                <span class="font-size">Second product</span>
+                                <span class="boxright">$8</span>
+                                <br>
+                                <small class="color">Brief description</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapse">
+                                <span class="font-size">Third item</span>
+                                <span class="boxright">$5</span>
+                                <br>
+                                <small class="color">Brief description</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapse">
+                                <span style="color:#1cdf5d">Promo code</span>
+                                <span class="boxright">-$5</span>
+                                <span style="color:#1cdf5d">EXMPLECODE</span>
+                            </div>
+                        </li>
+                        <li>
+                        <div class="collapse">
+                            <span>Total(USD)</span>
+                            <span class="boxright">$20</span>
+                        </div>
+                        </li>
+                    </ul>
+                        <form class="promo flexble" style="margin-top:20px ; padding: 10px">
+                            <input class="promo"style="width:80% ; margin-top:20" type="text" placeholder="Promo code"/>
+                            <div class="boxright" style="width:20% ; margin:0 ; padding:0">
+                                <button class="redeem" style="margin-top:20" type="submit">Redeem </button>
+                            </div>
+                        </form>
+                </div>    
         </div>
     </body>
 </html>
