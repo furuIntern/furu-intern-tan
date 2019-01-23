@@ -1,5 +1,6 @@
 
             *{
+                line-height: 2px;
                 box-sizing:border-box;
                 line-height:1.25;
                 text-align: left;
@@ -11,12 +12,12 @@
             
             .sizebox{
                 width: 100%;
-                padding: 5px 100px 5px 81px;
+                padding-right:10px;
                 margin: 0px 0px 10px 0px;
+                height: 35px;
             }
             div{
-               padding: 10px;
-               background: ghostwhite;
+                padding-right: 10px;
             }
             .stylebutton{
                 width:100%;
@@ -28,7 +29,7 @@
             }
             .contain{    
                 padding:0;
-                margin: 0; 
+                margin: 10px; 
             }
             .horizon{
                 color:gray;
@@ -38,21 +39,27 @@
                 background-color:rgb(77, 75, 75);
                 color:#ffff;
                 text-align: center;
+                padding-right: 1px;
             }
             ul{
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
+                height:50%;
+                background-color: azure;
+                border-radius:4px;
             }
-            
+            li{
+                height:20%;
+                border-bottom: 1px solid gray;
+                background-color: azure;
+                border-radius:4px;
+                text-align: justify;
+                padding: 10px; 
+            }
             .boxright{
                float: right;
                
-            }
-            .collapse{
-                border-bottom: 1px solid gray;
-                background-color: azure;
-                border-radius:4px;  
             }
             .boxleft{
                 float:left;
