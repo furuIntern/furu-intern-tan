@@ -22,7 +22,8 @@
                         <div class="flexble">
                             <div class="padding" style="width:50%">
                                 <label for="firstname">First name</label>
-                                <input id="firstname" class="sizebox border" name="First name" type="text" placeholder value required />
+                                <input class="sizebox border invalid" name="First name" type="text" required />
+                                <div clacss="error"></div>
                             </div>
                             <div class="padding" style="width:50%">
                                 <label for="lastname">last name</label>
@@ -186,9 +187,15 @@
                 </ul>
         </footer>
         <script>
-            function invail(){
-                
-            } 
+            function invalidfeedback(){
+    var x=document.getElementById(firstname).value;
+    
+    if(x.)
+    {
+        text= "Valid first name is required.";
+    }
+        text=document.getElementById(invalid-feedback).innerHTML = text;
+}
         </script>
     </body>
       
