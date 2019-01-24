@@ -1,9 +1,10 @@
-function invalidfeedback(){
-    var x=document.getElementById(firstname).value;
-    text=document.getElementById(invalid-feedback).innerHTML = text;
-    if(!x.checkInvalid())
+function test1(){
+    var text = getElementById("firstname");
+    text.addEventListener('invalid', myfunction);
+    function myfuntion()
     {
-        text= "Valid first name is required.";
+        if( text === '0'){
+            document.getElementById("demo1").style.display ="none";
+        }
     }
-
 }

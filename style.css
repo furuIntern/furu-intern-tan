@@ -15,6 +15,7 @@
                 padding-right:10px;
                 margin: 0px 0px 10px 0px;
                 height: 35px;
+                border-radius: 4px;
             }
             div{
                 padding-right: 10px;
@@ -40,6 +41,8 @@
                 color:#ffff;
                 text-align: center;
                 padding-right: 1px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
             }
             ul.table{
                 list-style-type: none;
@@ -93,6 +96,9 @@
                 border-radius:4px; 
                 
             }
+            .table{
+                border-bottom: none;
+            }
             .flexble{
                 display:flex;
                 flex-direction: row;
@@ -120,5 +126,17 @@
                 display: none;
                 color : #b91818;
             }
-            
+            .horizon{
+                border-bottom: 2px solid #000000;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            .promo{
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            .invalid{
+                display:none;
+                color: red;
+            }
        
