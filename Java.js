@@ -1,19 +1,31 @@
+                "use strict"
                 var submit      = document.getElementById("submit");
                 var test        = document.getElementsByClassName("Need_Test");
                 var i           = 0;
-                submit.addEventListener("click", demo);
-                function demo()
+                var display     = document.getElementsByClassName("invalid");
+                var border      = document.getElementsByClassName("border");
+                var email       = document.getElementById("email")
+                submit.addEventListener("click", Test_form);
+                email.addEventListener("click",Test_email);
+                function Test_form()
                 {
-                    for(i = 0; i <= test.length;i++){
+                    for(i = 0; i < test.length;i++){
                         
-                        if(test[i].value === ""){
-                            document.getElementsByClassName("invalid")[i].style.display = "inherit";
-                            document.getElementsByClassName("border")[i].style.border = " 1px solid red"
+                        if(test[i].value === "" ){
+                            border[i].style.border = " 1px solid red ";
+                            display[i].style.display = "inline";
                         }
                         else{
-                            document.getElementsByClassName("border")[i].style.border = " 1px solid green";
-                            document.getElementsByClassName("invalid")[i].style.display = "none";
+                            border[i].style.border = " 1px solid green";
+                            display[i].style.display = "none";
                         }
                     }
-                    
                 }
+                function Test_email()
+                {   
+                    if(email.value === "")
+                    {
+                        
+                    }
+                }
+
