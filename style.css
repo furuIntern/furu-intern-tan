@@ -116,4 +116,9 @@
                 display: inline-block;
                 text-align:center!important;
             }
+            .error{
+                display: none;
+                color : #b91818;
+            }
+            
        
