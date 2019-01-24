@@ -37,16 +37,16 @@
                             <div>
                                 <label for="user">Username</label>
                                 <input id="user"class="sizebox border Need_Test" type="text" name="user" placeholder="User" required/>
-                                <div class="invalid">Valid first name is required.<br/></div>
+                                <div class="invalid">Your username is required.<br/></div>
                                 <label for="email">email</label>
                                 <input id="email" class="sizebox border Need_Test" type="text" name ="email" placeholder="you@email.com" required/>
-                                <div class="invalid">Valid first name is required.<br/></div>
+                                <div class="invalid">Please enter your email address.<br/></div>
                                 <label for="address">address</label>
                                 <input id="address" class="sizebox border Need_Test" type="text" name ="address" placeholder="123 Main St" required/>
-                                <div class="invalid">Valid first name is required.<br/></div>
+                                <div class="invalid">Please enter your shipping address.<br/></div>
                                 <label for="address2">address 2</label>
                                 <input id="address2" class="sizebox border Need_Test" type="text" name="address 2" placeholder="Aparment or suite" required/>
-                                <div class="invalid">Valid first name is required.<br/></div>
+                                <div class="invalid">Please enter your shipping address 2.<br/></div>
                             </div>
                         </div>
                         <div class="flexble">
@@ -67,7 +67,7 @@
                             <div style="width:33.3%">
                                 <label for="zip">zip</label>
                                 <input id="zip" class="sizebox border Need_Test" type="text"/>
-                                <div class="invalid">Valid first name is required.</div>
+                                <div class="invalid">Valid first name is required.<br/></div>
                             </div>    
                         </div>
                         <div class="horizon">
@@ -95,24 +95,26 @@
                         <div class="flexble">
                             <div style="width:50%">
                                 <label for="namecard">Name on card</label>
-                                <input id="namecard" class="sizebox border Need_Test" type="text"/>
-                                <label for="namecard">Full name as displayed on card</label>
+                                <input id="namecard" style=" margin-bottom: 0" class="sizebox border Need_Test" type="text"/>
+                                <small style="color: gray">Full name as displayed on card</small>
+                                <p class="invalid">Valid first name is required.<br></p>
                             </div>
                             <div style="width:50%">
                                 <label for="credit">Credit card</label>
                                 <input id="credit" class="sizebox border Need_Test" type="text"/>
+                                <div class="invalid">Valid first name is required.<br></div>
                             </div>
                         </div>    
                         <div class="flexble">
                             <div style="width:25%">
                                 <label for="expiration">Expiration</label>
                                 <input id="expiration" class="sizebox border Need_Test" type="text"/>
-                                <div class="invalid">Valid first name is required.</div>
+                                <div class="invalid">Valid first name is required.<br></div>
                             </div>
                             <div style="width:25%">
                                 <label for="CVV">CVV</label>
                                 <input id="CVV" class="sizebox border Need_Test" type="text"/>
-                                <div class="invalid">Valid first name is required.</div>
+                                <div class="invalid">Valid first name is required.<br/></div>
                                 </div>
                             </div>    
                         <div class="horizon">
@@ -185,26 +187,7 @@
                     <a href="#"><li class="inline">Support</li></a>
                 </ul>
         </footer>
-        <script>
-                var submit      = document.getElementById("submit");
-                var test        = document.getElementsByClassName("Need_Test");
-                var i           = 0;
-                submit.addEventListener("click", demo);
-                function demo()
-                {
-                    for(i = 0; i < test.length;i++){
-                        
-                        if(test[i].value === ""){
-                            document.getElementsByClassName("invalid")[i].style.display = "inline";
-                        }
-                        else{
-                            document.getElementsByClassName("border")[i].style.border = " 2px solid green";
-                            document.getElementsByClassName("invalid")[i].style.display = "none";
-                        }
-                    }
-                    
-                }
-        </script>
+        <script src="java.js"></script>
     </body>
       
 </html>

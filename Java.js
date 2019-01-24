@@ -1,10 +1,19 @@
-function test1(){
-    var text = getElementById("firstname");
-    text.addEventListener('invalid', myfunction);
-    function myfuntion()
-    {
-        if( text === '0'){
-            document.getElementById("demo1").style.display ="none";
-        }
-    }
-}
+                var submit      = document.getElementById("submit");
+                var test        = document.getElementsByClassName("Need_Test");
+                var i           = 0;
+                submit.addEventListener("click", demo);
+                function demo()
+                {
+                    for(i = 0; i <= test.length;i++){
+                        
+                        if(test[i].value === ""){
+                            document.getElementsByClassName("invalid")[i].style.display = "inherit";
+                            document.getElementsByClassName("border")[i].style.border = " 1px solid red"
+                        }
+                        else{
+                            document.getElementsByClassName("border")[i].style.border = " 1px solid green";
+                            document.getElementsByClassName("invalid")[i].style.display = "none";
+                        }
+                    }
+                    
+                }
