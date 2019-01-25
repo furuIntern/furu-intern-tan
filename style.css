@@ -136,7 +136,12 @@
                 border-bottom-right-radius: 0px;
             }
             .invalid{
-                display:none;
+                visibility: hidden;
                 color: red;
             }
+            #Check_Gmail{
+                visibility: hidden;
+                color: red
+            }
+           
        

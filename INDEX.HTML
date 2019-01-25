@@ -20,53 +20,53 @@
                 <!--sheet 2--> 
                 <div class="contain" style="width:70%">
                     <h1 class="option">Billing address</h1>
-                    <form id="test">
+                    <form>
                         <div class="flexble">
                             <div class="padding" style="width:50%">
                                 <label for="firstname">First name</label>
-                                <input id="firstname" class="sizebox border Need_Test" name="First name" type="text"/>
+                                <input id="firstname" class="sizebox border check need_Test" name="First name" type="text"  required/>
                                 <div class="invalid">Valid first name is required.</div>
                             </div>
                             <div class="padding" style="width:50%">
                                 <label for="lastname">last name</label>
-                                <input id="lastname" class="sizebox border Need_Test" type="text" name="last name" required/>
+                                <input id="lastname" class="sizebox border check need_Test" type="text" name="last name"  required/>
                                 <div class="invalid">Valid last name is required.</div>
                             </div>
                         </div>
                         <div>
                             <div>
                                 <label for="user">Username</label>
-                                <input id="user"class="sizebox border Need_Test" type="text" name="user" placeholder="User" required/>
+                                <input id="user"class="sizebox border check need_Test" type="text" name="user" placeholder="User"  required/>
                                 <div class="invalid">Your username is required.<br/></div>
                                 <label for="email">email</label>
-                                <input id="email" class="sizebox border" type="email" name ="email" placeholder="you@email.com" required/>
-                                <div class="invalid">Please enter your email address.<br/></div>
+                                <input id="email" class="sizebox border" type="email" name ="email" placeholder="you@email.com"  required/>
+                                <div id="Check_Gmail">Please enter your email address.<br/></div>
                                 <label for="address">address</label>
-                                <input id="address" class="sizebox border Need_Test" type="text" name ="address" placeholder="123 Main St" required/>
+                                <input id="address" class="sizebox border check need_Test" type="text" name ="address" placeholder="123 Main St"  required/>
                                 <div class="invalid">Please enter your shipping address.<br/></div>
                                 <label for="address2">address 2</label>
-                                <input id="address2" class="sizebox border Need_Test" type="text" name="address 2" placeholder="Aparment or suite" required/>
+                                <input id="address2" class="sizebox border check need_Test" type="text" name="address 2" placeholder="Aparment or suite"  required/>
                                 <div class="invalid">Please enter your shipping address 2.<br/></div>
                             </div>
                         </div>
                         <div class="flexble">
                             <div style="width:33.3%">
                                 <label for="country">country</label>
-                                <select id="country" class="sizebox border Need_Test">
+                                <select id="country" class="sizebox border choose">
                                     <option value="Choose...">Choose...</option>
                                     <option value="USA">USA</option>
                                 </select>
                             </div>    
                             <div style="width:33.3%"> 
                                 <label for="state">state</label>
-                                <select id="state" class="sizebox border Need_Test"> 
+                                <select id="state" class="sizebox border choose"> 
                                     <option value="Choose...">Choose...</option>
                                     <option value="California">California</option>
                                 </select>
                             </div>    
                             <div style="width:33.3%">
                                 <label for="zip">zip</label>
-                                <input id="zip" class="sizebox border Need_Test" type="text"/>
+                                <input id="zip" class="sizebox border check need_Test" type="text"/>
                                 <div class="invalid">Valid first name is required.<br/></div>
                             </div>    
                         </div>
@@ -95,32 +95,32 @@
                         <div class="flexble">
                             <div style="width:50%">
                                 <label for="namecard">Name on card</label>
-                                <input id="namecard" style=" margin-bottom: 0" class="sizebox border Need_Test" type="text"/>
+                                <input id="namecard" style=" margin-bottom: 0" class="sizebox border check need_Test" type="text" required/>
                                 <small style="color: gray">Full name as displayed on card</small>
                                 <p class="invalid">Valid first name is required.<br></p>
                             </div>
                             <div style="width:50%">
                                 <label for="credit">Credit card</label>
-                                <input id="credit" class="sizebox border Need_Test" type="text"/>
+                                <input id="credit" class="sizebox border check need_Test" type="text"  required/>
                                 <div class="invalid">Valid first name is required.<br></div>
                             </div>
                         </div>    
                         <div class="flexble">
                             <div style="width:25%">
                                 <label for="expiration">Expiration</label>
-                                <input id="expiration" class="sizebox border Need_Test" type="text"/>
+                                <input id="expiration" class="sizebox border check need_Test" type="text"  required/>
                                 <div class="invalid">Valid first name is required.<br></div>
                             </div>
                             <div style="width:25%">
                                 <label for="CVV">CVV</label>
-                                <input id="CVV" class="sizebox border Need_Test" type="text"/>
+                                <input id="CVV" class="sizebox border check need_Test" type="text"  required/>
                                 <div class="invalid">Valid first name is required.<br/></div>
                                 </div>
                             </div>    
                         <div class="horizon">
                         </div>
                         <div>
-                            <input id="submit" class="stylebutton border" type="submit" value="Continue to checkout"/>
+                            <input id="submit" class="stylebutton border" type="submit" value="Continue to checkout" />
                         </div>
                     </form>
                 </div>
