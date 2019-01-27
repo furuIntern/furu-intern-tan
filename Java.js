@@ -46,5 +46,8 @@
                         }
                     }
                 
+                }
+                function radio(){
+                    document.getElementsByClassName("radiobox").style.color = "green";
                 }      
 
