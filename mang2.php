@@ -26,7 +26,7 @@
             'position' => 'author'
         )
     );
-    $mang[6]['name'] = 'Trương Phúc Hoài Minh';
+    $mang[6]['name'] = 'Trương Phúc Hoài Minh';     /* array want add*/
     $mang[6]['blog'] = 'freetus.net';
     $mang[6]['position'] = 'author';
     $lenght = count($mang);

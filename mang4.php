@@ -26,7 +26,7 @@
             'position' => 'author'
         )
     );
-    $k=  3;     
+    $k=  3;             /* array want eddit */
     $mang[$k]['name'] = 'Trương Phúc Hoài Minh';
     $mang[$k]['blog'] = 'freetus.net';
     $mang[$k]['position'] = 'author';
