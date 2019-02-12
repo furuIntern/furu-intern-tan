@@ -6,7 +6,7 @@
                 var border      = document.getElementsByClassName("check");
                 var email       = document.getElementById("email")
                 var check       = document.getElementsByClassName("choose") 
-                submit.addEventListener("click", test_form);
+                submit.addEventListener("click",test_form);
                 submit.addEventListener("click",test_Email);
                 submit.addEventListener("click",choose);
                 function test_form()

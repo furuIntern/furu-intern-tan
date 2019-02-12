@@ -1,35 +1,36 @@
 <?php
     $mang=array(
         1 => array(
-            'name' => 'a',
+            'name' => 'Nguyễn Văn Cường',
             'blog' => 'freetus.net',
             'position' => 'admin'
         ),
         2 => array(
-            'name' => 'b',
+            'name' => 'Trương Phúc Hoài Minh',
             'blog' => 'freetus.net',
-            'position' => 'user'
+            'position' => 'author'
         ),
         3 => array(
-            'name' => 'c',
+            'name' => 'Trương Phúc Hoài Minh',
             'blog' => 'freetus.net',
-            'position' => 'user'
+            'position' => 'author'
         ),
         4 => array(
-            'name' => 'd',
+            'name' => 'Trương Phúc Hoài Minh',
             'blog' => 'freetus.net',
-            'position' => 'user'
+            'position' => 'author'
         ),
         5 => array( 
-            'name' => 'e',
+            'name' => 'Trương Phúc Hoài Minh',
             'blog' => 'freetus.net',
-            'position' => 'user'
+            'position' => 'author'
         )
     );
-    $k= 2;
-    $mang[$k]['name'] = '3';
-    $mang[$k]['blog'] = '4';
-    $mang[$k]['position'] = '5';
+    $k=  3;     
+    $mang[$k]['name'] = 'Trương Phúc Hoài Minh';
+    $mang[$k]['blog'] = 'freetus.net';
+    $mang[$k]['position'] = 'author';
+    $length = count($mang);
     for ($i= 1 ; $i <= $length ; $i++){
         echo $mang[$i]['name'];
         echo '<br/>';
@@ -38,5 +39,4 @@
         echo $mang[$i]['position'];
         echo '<br/>';
     }
-    echo $length;
 ?>

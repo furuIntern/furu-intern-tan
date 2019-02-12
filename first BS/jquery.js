@@ -4,11 +4,11 @@ $(document).ready(function(){
             if($(this).val().trim()==="")
             {
                 $(this).css("border","2px solid red")
-                $().css("visibility","visible")
+                $(this).append="eror"
             }
             else{
                 $(this).css("border","2px solid green")
-                $(".invalid").css("visibility","hidden")
+                
             }
         })
         $("#country").each(function(){
@@ -29,6 +29,8 @@ $(document).ready(function(){
                     $(this).css("border","2px solid green") 
                 }
             })
-    
+            
+            
+            
     })
 })
