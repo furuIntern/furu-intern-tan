@@ -10,21 +10,21 @@
     }
     else
     {
-        $denta=pow($b,2)-4*$a*$c;
-        if($denta > 0)
+        $denta_float=pow($b_float,2)-4*$a_float*$c_float;
+        if($denta_float > 0)
         {
-            $x1=(-$b+sqrt($denta))/2*a);
+            $x1_float=(-$b_float+sqrt($denta_float))/2*a_float);
             echo 'phuong trinh co nghiem thu 1 la: ';
-            echo $x1;
-            $x2=(-$b-sqrt($denta))/2*a);
+            echo $x1_float;
+            $x2_float=(-$b_float-sqrt($denta_float))/2*a_float);
             echo 'phuong trinh co nghiem thu 2 la: ';
-            echo $x2;
+            echo $x2_float;
         }
-        else if($denta = 0)
+        else if($denta_float = 0)
         {
-            $x= -$b/2*$a;
+            $x_float= -$b_float/2*$a_float;
             echo 'phuong trinh co nghiem la: ';
-            echo $x;
+            echo $x_float;
         }
         else{
             echo 'phuong trinh vo nghiem';
