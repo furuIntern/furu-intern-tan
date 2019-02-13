@@ -1,8 +1,8 @@
 <?php
     /* ax^2+bx+c=0*/ 
-    $a=0;
-    $b=12;
-    $c=-12;
+    $a_float=0;
+    $b_float=12;
+    $c_float=-12;
     if($a == 0){
         $x=-$c/$b;
         echo 'phuong trinh co nghiem la: ';
