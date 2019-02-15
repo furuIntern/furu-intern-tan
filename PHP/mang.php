@@ -1,33 +1,32 @@
 <?php
     $mang=array(
         1 => array(
-            'name' => 'Nguyễn Văn Cường',
+            'name' => 'a',
             'blog' => 'freetus.net',
             'position' => 'admin'
         ),
         2 => array(
-            'name' => 'Trương Phúc Hoài Minh',
+            'name' => 'b',
             'blog' => 'freetus.net',
-            'position' => 'author'
+            'position' => 'user'
         ),
         3 => array(
-            'name' => 'Trương Phúc Hoài Minh',
+            'name' => 'c',
             'blog' => 'freetus.net',
-            'position' => 'author'
+            'position' => 'user'
         ),
         4 => array(
-            'name' => 'Trương Phúc Hoài Minh',
+            'name' => 'd',
             'blog' => 'freetus.net',
-            'position' => 'author'
+            'position' => 'user'
         ),
         5 => array( 
-            'name' => 'Trương Phúc Hoài Minh',
+            'name' => 'e',
             'blog' => 'freetus.net',
-            'position' => 'author'
+            'position' => 'user'
         )
     );
-    $lenght = count($mang);
-    for ($i= 1 ; $i <= $lenght; $i++){
+    for ($i= 1 ; $i <= count($mang); $i++){
         echo $mang[$i]['name'];
         echo '<br/>';
         echo $mang[$i]['blog'];
