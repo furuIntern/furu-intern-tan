@@ -1,0 +1,193 @@
+<!--Minh Tan  (21/1/2019)-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+            
+        <div>
+            <!--sheet 1-->
+            <div class="contain">
+                <h1 style="text-align:center"><b>Checkout form</b></h1>
+                <p class="option"style="font-size:30px;text-align:center">Below is an example form built entirely with Bootstrap’s form controls. 
+                Each required form group has a validation state that can be triggered 
+                by attempting to submit the form without completing it.</p>
+            </div>     
+            <div class="flexble">
+                <!--sheet 2--> 
+                <div class="contain" style="width:70%">
+                    <h1 class="option">Billing address</h1>
+                    <form>
+                        <div class="flexble">
+                            <div class="padding" style="width:50%">
+                                <label for="firstname">First name</label>
+                                <input id="firstname" class="sizebox border check need_Test" name="First name" type="text"  required/>
+                                <div class="invalid">Valid first name is required.</div>
+                            </div>
+                            <div class="padding" style="width:50%">
+                                <label for="lastname">last name</label>
+                                <input id="lastname" class="sizebox border check need_Test" type="text" name="last name"  required/>
+                                <div class="invalid">Valid last name is required.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="user">Username</label>
+                                <input id="user"class="sizebox border check need_Test" type="text" name="user" placeholder="User"  required/>
+                                <div class="invalid">Your username is required.<br/></div>
+                                <label for="email">email</label>
+                                <input id="email" class="sizebox border" type="email" name ="email" placeholder="you@email.com"  required/>
+                                <div id="Check_Gmail">Please enter your email address.<br/></div>
+                                <label for="address">address</label>
+                                <input id="address" class="sizebox border check need_Test" type="text" name ="address" placeholder="123 Main St"  required/>
+                                <div class="invalid">Please enter your shipping address.<br/></div>
+                                <label for="address2">address 2</label>
+                                <input id="address2" class="sizebox border check need_Test" type="text" name="address 2" placeholder="Aparment or suite"  required/>
+                                <div class="invalid">Please enter your shipping address 2.<br/></div>
+                            </div>
+                        </div>
+                        <div class="flexble">
+                            <div style="width:33.3%">
+                                <label for="country">country</label>
+                                <select id="country" class="sizebox border choose">
+                                    <option value="Choose...">Choose...</option>
+                                    <option value="USA">USA</option>
+                                </select>
+                            </div>    
+                            <div style="width:33.3%"> 
+                                <label for="state">state</label>
+                                <select id="state" class="sizebox border choose"> 
+                                    <option value="Choose...">Choose...</option>
+                                    <option value="California">California</option>
+                                </select>
+                            </div>    
+                            <div style="width:33.3%">
+                                <label for="zip">zip</label>
+                                <input id="zip" class="sizebox border check need_Test" type="text"/>
+                                <div class="invalid">Valid first name is required.<br/></div>
+                            </div>    
+                        </div>
+                        <div class="horizon">
+                        </div>
+                        <div>
+                            <div classs="padding">
+                                <input  id="checkbox1" type="checkbox" onclick="radio()"/><label for="checkbox1" class="radiobox" >shipping address is the same as my billing address</label>
+                                <br/>
+                                <input  id="checkbox2" type="checkbox" onclick="radio()"/><label for="checkbox2" class="radiobox" >save this information for next time</label>
+                            </div>
+                        </div>
+                        <div class="horizon">
+                        </div>
+                        <div classs="padding">
+                            <div classs="padding">
+                                <h1 class="option">payment</h1>
+                                <input id="radio1" type="radio" name="payment"/><label for="radio1">credit card</label>
+                                <br>
+                                <input id="radio2" type="radio" name="payment"/><label for="radio2">debit card</label>
+                                <br>
+                                <input id="radio3" type="radio" name="payment"/><label for="radio3">paypal</label>
+                                <br>
+                            </div>    
+                        </div>
+                        <div class="flexble">
+                            <div style="width:50%">
+                                <label for="namecard">Name on card</label>
+                                <input id="namecard" style=" margin-bottom: 0" class="sizebox border check need_Test" type="text" required/>
+                                <small style="color: gray">Full name as displayed on card</small>
+                                <p class="invalid">Valid first name is required.<br></p>
+                            </div>
+                            <div style="width:50%">
+                                <label for="credit">Credit card</label>
+                                <input id="credit" class="sizebox border check need_Test" type="text"  required/>
+                                <div class="invalid">Valid first name is required.<br></div>
+                            </div>
+                        </div>    
+                        <div class="flexble">
+                            <div style="width:25%">
+                                <label for="expiration">Expiration</label>
+                                <input id="expiration" class="sizebox border check need_Test" type="text"  required/>
+                                <div class="invalid">Valid first name is required.<br></div>
+                            </div>
+                            <div style="width:25%">
+                                <label for="CVV">CVV</label>
+                                <input id="CVV" class="sizebox border check need_Test" type="text"  required/>
+                                <div class="invalid">Valid first name is required.<br/></div>
+                                </div>
+                            </div>    
+                        <div class="horizon">
+                        </div>
+                        <div>
+                            <input id="submit" class="stylebutton border" type="submit" value="Continue to checkout" />
+                        </div>
+                    </form>
+                </div>
+                <div style="width:30%">
+                    <div style="padding:10px">
+                        <span style="font-size:2rem">Your car</span>
+                        <span class="boxright decoration" >3</span>
+                    </div>
+                    <ul class="table" style="list-style-type: none">
+                        <li class="bill">
+                            <div>
+                                <span class="font-size">Product name</span>
+                                <span class="boxright">$12</span>
+                                <br>
+                                <small class="color">Brief description</small>
+                            </div>
+                        </li>
+                        <li class="bill">
+                            <div>
+                                <span class="font-size">Second product</span>
+                                <span class="boxright">$8</span>
+                                <br>
+                                <small class="color">Brief description</small>
+                            </div>
+                        </li>
+                        <li class="bill">
+                            <div>
+                                <span class="font-size">Third item</span>
+                                <span class="boxright">$5</span>
+                                <br>
+                                <small class="color">Brief description</small>
+                            </div>
+                        </li>
+                        <li class="bill">
+                            <div>
+                                <span style="color:#1cdf5d">Promo code</span>
+                                <span class="boxright">-$5</span>
+                                <br>
+                                <span style="color:#1cdf5d">EXMPLECODE</span>
+                            </div>
+                        </li>
+                        <li class="bill"> 
+                        <div>
+                            <span>Total(USD)</span>
+                            <span class="boxright">$20</span>
+                        </div>
+                        </li>
+                    </ul>
+                        <form class="promo flexble" style="margin-top:20px ; padding: 10px">
+                            <input class="promo"style="width:80% ; margin-top:20 ; height:30px " type="text" placeholder="Promo code"/>
+                            <div class="boxright" style="width:20% ; margin:0 ; padding:0">
+                                <button class="redeem" style="margin-top:20 ; height:30px" type="submit">Redeem </button>
+                            </div>
+                        </form>
+                
+                </div>
+                  
+        </div>
+        <footer>
+                <p style="font-size:1.5rem ; color:#5a5656 ; text-align:center!important ;margin-bottom: 2px ">© 2017-2018 Company Name</p>
+                <ul style="text-align:center!important ; padding:0 ; margin-top: 2px">
+                    <a href="#"><li class="inline">Privacy</li></a>
+                    <a href="#"><li class="inline">Term</li></a>
+                    <a href="#"><li class="inline">Support</li></a>
+                </ul>
+        </footer>
+        <script src="java.js"></script>
+    </body>
+      
+</html>

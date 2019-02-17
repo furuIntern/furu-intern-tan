@@ -1,0 +1,147 @@
+
+            *{
+                line-height: 2px;
+                box-sizing:border-box;
+                line-height:1.25;
+                text-align: left;
+            }    
+            * body {
+                
+                background: ghostwhite;
+            }
+            
+            .sizebox{
+                width: 100%;
+                padding-right:10px;
+                margin: 0px 0px 10px 0px;
+                height: 35px;
+                border-radius: 4px;
+            }
+            div{
+                padding-right: 10px;
+            }
+            .stylebutton{
+                width:100%;
+                background-color: aquamarine;
+                border: 1px solid aquamarine;
+                height:40px;
+                font-size: 100%;
+                text-align: center;
+            }
+            .contain{    
+                padding:0;
+                margin: 10px; 
+            }
+            .horizon{
+                color:gray;
+            }
+            .redeem{
+                border: 1px solid #000;
+                background-color:rgb(77, 75, 75);
+                color:#ffff;
+                text-align: center;
+                padding-right: 1px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            ul.table{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                height:50%;
+                background-color: azure;
+                border-radius:4px;
+            }
+            li.bill{
+                height:20%;
+                border-bottom: 1px solid gray;
+                background-color: azure;
+                border-radius:4px;
+                text-align: justify;
+                padding: 25px; 
+            }
+            .boxright{
+               float: right;
+               
+            }
+            .boxleft{
+                float:left;
+
+            }
+            .option{
+                margin-bottom: 2px;
+                margin-top:0;
+            }
+            .padding{
+                padding-right: 5px;
+            }
+            input.width{
+                max-width:431px;
+            }
+            input.border{
+                border-style: round;
+                border: 1px solid black;
+                border-radius:12px;
+                margin-right:inherit;
+            }
+            select.border{
+                border-style: round;
+                border: 1px solid black;
+                border-radius:12px;
+
+            }
+            .table, .promo, .containpromo{
+                border: 1px solid gray;
+                background-color: azure;
+                border-radius:4px; 
+                
+            }
+            .table{
+                border-bottom: none;
+            }
+            .flexble{
+                display:flex;
+                flex-direction: row;
+            }
+            .decoration{
+                padding:4px;
+                margin:0;
+                border:1 px solid #000000;
+                background-color: #382424;
+                color:#ffffff;
+                border-radius:12px;
+                font-size: 2rem;
+            }
+            .font-size{
+                font-size: 1rem;
+            }
+            .color{
+                color:#9e9999;
+            }
+            .inline{
+                display: inline-block;
+                text-align:center!important;
+            }
+            .error{
+                display: none;
+                color : #b91818;
+            }
+            .horizon{
+                border-bottom: 2px solid #000000;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            .promo{
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            .invalid{
+                visibility: hidden;
+                color: red;
+            }
+            #Check_Gmail{
+                visibility: hidden;
+                color: red
+            }
+           
+       
