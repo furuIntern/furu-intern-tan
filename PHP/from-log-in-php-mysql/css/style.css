@@ -1,0 +1,29 @@
+/*
+.container div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+}
+.container {
+    line-height: 1.5rem;
+    width: 100%;
+}
+.label{
+    position: absolute;
+    margin-left:30px;
+    margin-bottom: 10px; 
+}
+.image{
+    overflow: hidden; 
+}
+.form{
+    margin:auto;
+    width:50%;
+}
+*/
+.invalid{
+    text-align: center;
+    color: #c21a1a;
+}
+

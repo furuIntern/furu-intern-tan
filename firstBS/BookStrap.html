@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="jquery.js"></script>
+</head>
+<body class="container">
+    <div class="container">
+        <div class="container">
+            <img src="" alt="">
+            <h1 class="text-center text-lg">Check Form</h1>
+            <p class="text-center text-lg">Below is an example form built entirely with Bootstrap’s form controls. 
+                Each required form group has a validation state that can be triggered 
+                by attempting to submit the form without completing it.
+            </p>
+        </div>
+        <div class="d-flex">
+            <div class="col-lg-8">
+                <div><h1 class="text-lg">Billing address</h1></div>
+                <form id="submit" class="">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="firstname">Firstname</label>
+                        <input id="firstname" class="form-control test" type="text" name="first name" required/>
+                        <div class="invalid-feedback">error</div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="lastname">Lastname</label>
+                        <input id="lastname" class="form-control test" type="text" name="lastname" required/>
+                        <div class="invalid-feedback">error</div>
+                    </div>
+                </div>                        
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input id="username" class="form-control test" type="text" name="username" required/>
+                        <div class="invalid-feedback">error</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" class="form-control" type="text" name="email" required/>
+                        <div class="invalid-feedback">error</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">address</label>
+                        <input type="text" class="form-control test" name="address" id="address" required/>
+                        <div class="invalid-feedback">error</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address2">Address2</label>
+                        <input type="text" class="form-control test" name="address2" id="address2" required/>
+                        <div class="invalid-feedback">error</div>
+                    </div>
+                <div class="row">
+                    <div class="col-lg-4 form-group">
+                        <label for="country">Country</label>
+                        <select name="country" class="form-control custom-select" id="country">
+                            <option value="Choose...">Choose...</option>
+                            <option value="USA">USA</option>
+                        </select>
+                        <div class="invalid-feedback">error</div>
+                    </div>
+                    <div class="col-lg-4 form-group">
+                        <label for="state">State</label>
+                        <select name="state" id="state" class="form-control custom-select">
+                            <option value="Choose...">Choose...</option>
+                            <option value="california">California</option>
+                        </select>
+                        <div class="invalid-feedback">error</div>
+                    </div>
+                    <div class="col-lg-4 form-group">
+                        <label for="zip">Zip</label>
+                        <input type="text" name="" id="zip" class="form-control" required/>
+                        <div class="invalid-feedback">error</div>
+                    </div>
+                </div>
+                    <hr class="mb-3"/>
+                    <div class="checkbox custom-control custom-checkbox">
+                        <input type="checkbox" name="" id="checkbox1" class="custom-control-input"/><label for="checkbox1" class="custom-control-label">Shipping address is the same as my billing address</label>
+                    </div>
+                    <div class="checkbox custom-control custom-checkbox">
+                        <input type="checkbox" name="" id="checkbox2" class="custom-control-input"/><label for="checkbox2" class="custom-control-label">Save this information for next time</label>
+                    </div>
+                    <hr class="mb-3"/>
+                    <h1 class="text-lg">Payment</h1>
+                    <div class="radio custom-control custom-radio">
+                        <input type="radio" name="payment" id="radio1" class="custom-control-input"><label for="radio1" class="custom-control-label">Credit card</label>
+                    </div>
+                    <div class="radio custom-control custom-radio">
+                        <input type="radio" name="payment" id="radio2" class="custom-control-input"><label for="radio2" class="custom-control-label">Debit card</label>
+                    </div>
+                    <div class="radio custom-control custom-radio">
+                        <input type="radio" name="payment" id="radio3" class="custom-control-input"><label for="radio3" class="custom-control-label">Paypal</label>
+                    </div>
+                <div class="row">    
+                    <div class="col-lg-6 form-group">
+                        <label for="namecard">Name on card</label>
+                        <input type="text" name="namecard" id="namecard" class="form-control test" required/>
+                        <small class="text-muted">Full name as displayed on card</small>
+                        <div class="invalid-feedback">error</div>
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <label for="cardnumber">Credit card number</label>
+                        <input type="text" name="cardnumber" id="cardnumber" class="form-control test" required/>
+                        <div class="invalid">error</div>
+                    </div>
+                </div>
+                <div class="row">    
+                    <div class="col-lg-3 form-group">
+                        <label for="expiration">Expiration</label>
+                        <input type="text" name="expiration" id="expiration" class="form-control test" required/>
+                        <div class="invalid">error</div>
+                    </div>
+                    <div class="col-lg-3 form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" name="cvv" id="cvv" class="form-control test" required/>
+                        <div class="invalid-feedback">error</div>
+                    </div>
+                </div>    
+                <hr class="mb-3"/>
+                    <button id="button" class="btn btn-primary btn-lg btn-block">Continue to checkout</button>
+                </form>        
+                
+            </div>
+            <div class="col-lg-4">
+                <h1>Your car
+                <span class="badge text-lg" style="float:right">3</span>
+                </h1>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item">
+                        <div>
+                            <h6>Product name<span class="" style="float:right">$12</span></h6>
+                            <small class="text-muted">Brief description</small>
+                        </div>    
+                    </li>
+                    <li class="list-group-item">
+                        <div>
+                            <h6>Third item<span style="float:right">$5</span></h6>
+                            <small>Brief description</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div>
+                            <h6>Promocode<span style="float:right">-$5</span></h6>
+                            <h6>EXAMPLECODE</h6>
+                        </div>
+                        
+                    </li>
+                    <li class="list-group-item">
+                        <h6>Totoal(USA)<span style="float:right">$20</span></h6>
+                    </li>
+                </ul>
+                <form class="card p-2" action="">
+                    <div class="input-group">
+                        <input type="text" name="" id="" placeholder="Promode code" class="form-control" ><button class="btn btn-secondary">Redeem</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-muted mb-5 my-5">
+            <p>© 2017-2018 Company Name</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Support</a>
+                </li>
+            </ul>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
